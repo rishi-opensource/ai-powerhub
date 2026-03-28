@@ -1,0 +1,12 @@
+{
+  "name": "ai-powerhub",
+  "description": "Universal developer productivity plugin: systematic debugging, PR review, and engineering best practices",
+  "version": "1.0.0",
+  "author": {
+    "name": "AI Powerhub"
+  },
+  "homepage": "https://github.com/your-org/ai-powerhub",
+  "repository": "https://github.com/your-org/ai-powerhub",
+  "license": "MIT",
+  "keywords": ["debugging", "pr-review", "productivity", "engineering", "best-practices"]
+}

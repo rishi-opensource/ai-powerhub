@@ -1,0 +1,14 @@
+{
+  "name": "ai-powerhub",
+  "version": "1.0.0",
+  "description": "Universal developer productivity plugin for AI coding agents",
+  "license": "MIT",
+  "keywords": [
+    "claude-plugin",
+    "cursor-plugin",
+    "debugging",
+    "pr-review",
+    "developer-tools",
+    "ai-agent"
+  ]
+}

@@ -1,0 +1,55 @@
+#!/usr/bin/env bash
+# AI Powerhub — SessionStart hook
+#
+# Checks that required tools are available and injects a warning into the
+# session context if anything is missing. Silent on healthy sessions.
+#
+# Required tools:
+#   gh  — GitHub CLI (for PR review commands)
+#   git — Version control (for debugging history features)
+
+set -euo pipefail
+
+warnings=()
+
+# ── Check: gh CLI installed ────────────────────────────────────────────────────
+if ! command -v gh &>/dev/null; then
+    warnings+=("ai-powerhub: 'gh' (GitHub CLI) is not installed. PR review commands (/review-pr) will not work. Install from https://cli.github.com then run 'gh auth login'.")
+elif ! gh auth status &>/dev/null 2>&1; then
+    warnings+=("ai-powerhub: 'gh' is installed but not authenticated. Run 'gh auth login' to enable PR review features.")
+fi
+
+# ── Check: git installed ───────────────────────────────────────────────────────
+if ! command -v git &>/dev/null; then
+    warnings+=("ai-powerhub: 'git' is not installed. Debugging history features will not work.")
+fi
+
+# ── Exit cleanly if everything is healthy ─────────────────────────────────────
+if [ ${#warnings[@]} -eq 0 ]; then
+    exit 0
+fi
+
+# ── Emit warnings as session context ──────────────────────────────────────────
+escape_for_json() {
+    local s="$1"
+    s="${s//\\/\\\\}"
+    s="${s//\"/\\\"}"
+    s="${s//$'\n'/\\n}"
+    s="${s//$'\r'/\\r}"
+    s="${s//$'\t'/\\t}"
+    printf '%s' "$s"
+}
+
+message=$(printf '%s\n' "${warnings[@]}")
+escaped=$(escape_for_json "${message}")
+
+# Output both formats for compatibility with different Claude Code versions
+cat <<EOF
+{
+  "additional_context": "${escaped}",
+  "hookSpecificOutput": {
+    "hookEventName": "SessionStart",
+    "additionalContext": "${escaped}"
+  }
+}
+EOF
