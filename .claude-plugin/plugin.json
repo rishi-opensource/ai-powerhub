@@ -1,12 +1,18 @@
 {
-  "name": "ai-powerhub",
+  "name": "dev-power",
   "description": "Universal developer productivity plugin: systematic debugging, PR review, and engineering best practices",
   "version": "1.0.0",
   "author": {
     "name": "AI Powerhub"
   },
-  "homepage": "https://github.com/your-org/ai-powerhub",
-  "repository": "https://github.com/your-org/ai-powerhub",
+  "homepage": "https://github.com/rishi-opensource/ai-powerhub",
+  "repository": "https://github.com/rishi-opensource/ai-powerhub",
   "license": "MIT",
-  "keywords": ["debugging", "pr-review", "productivity", "engineering", "best-practices"]
+  "keywords": [
+    "debugging",
+    "pr-review",
+    "productivity",
+    "engineering",
+    "best-practices"
+  ]
 }

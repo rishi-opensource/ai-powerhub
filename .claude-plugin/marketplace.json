@@ -1,5 +1,5 @@
 {
-  "name": "rishi-opensource",
+  "name": "ai-powerhub",
   "description": "Universal developer productivity plugin for AI coding agents",
   "owner": {
     "name": "Rishi Sharma",
@@ -7,10 +7,13 @@
   },
   "plugins": [
     {
-      "name": "ai-powerhub",
+      "name": "dev-power",
       "description": "Universal developer productivity plugin: systematic debugging, PR review, and engineering best practices",
       "version": "1.0.0",
-      "source": "./"
+      "source": {
+        "source": "github",
+        "repo": "rishi-opensource/ai-powerhub"
+      }
     }
   ]
 }

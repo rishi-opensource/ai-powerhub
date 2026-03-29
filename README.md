@@ -12,9 +12,9 @@ Universal developer productivity plugin for AI coding agents — works with Clau
 ## Install
 
 ### Claude Code
-```
-/plugin marketplace add ./ai-powerhub
-/plugin install ai-powerhub@ai-powerhub-dev
+```bash
+/plugin marketplace add rishi-opensource/ai-powerhub
+/plugin install dev-power@ai-powerhub
 ```
 
 ### Cursor
@@ -22,7 +22,7 @@ Add the plugin directory to your Cursor plugins or install from the Cursor marke
 
 ### Local development
 ```bash
-/plugin marketplace add /path/to/ai-powerhub
+/plugin marketplace add ./ai-powerhub
 ```
 
 ## Commands
