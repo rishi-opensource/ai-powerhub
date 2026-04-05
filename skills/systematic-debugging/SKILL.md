@@ -1,6 +1,7 @@
 ---
 name: systematic-debugging
-description: Use when investigating a bug, unexpected behavior, error, or test failure. Trigger on "debug", "investigate this error", "why is X failing", "figure out why", "help me debug", or when given a stack trace. Enforces evidence-based root cause analysis — never guessing.
+description: >-
+  Use when investigating a bug, unexpected behavior, error, or test failure. Trigger on "debug", "investigate this error", "why is X failing", "figure out why", "help me debug", or when given a stack trace. Enforces evidence-based root cause analysis — never guessing.
 ---
 
 # Systematic Debugging

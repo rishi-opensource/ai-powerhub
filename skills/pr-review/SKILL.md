@@ -1,6 +1,7 @@
 ---
 name: pr-review
-description: Use when reviewing a pull request, diff, or set of code changes. Trigger on "review this PR", "review these changes", "review my diff", "code review", "look at this PR". Produces a structured review with severity-rated findings across correctness, security, performance, and test coverage.
+description: >-
+  Use when reviewing a pull request, diff, or set of code changes. Trigger on "review this PR", "review these changes", "review my diff", "code review", "look at this PR". Produces a structured review with severity-rated findings across correctness, security, performance, and test coverage.
 ---
 
 # PR Review

@@ -1,6 +1,7 @@
 ---
 name: doc-merger
-description: Reads, analyzes, and synthesizes multiple documents from any combination of sources — local files, Google Doc links, Confluence URLs, Jira tickets, Slack threads, README files, or raw pasted text — into a single unified, high-quality document. Automatically detects audience (engineering, product, business) from content and adapts tone accordingly. Triggers on: "merge these docs", "synthesize these documents", "summarize these docs", "create unified doc", "analyze and combine these", "review and explain these docs", "combine all these into one", or any request to unify multiple document sources.
+description: >-
+  Reads, analyzes, and synthesizes multiple documents from any combination of sources — local files, Google Doc links, Confluence URLs, Jira tickets, Slack threads, README files, or raw pasted text — into a single unified, high-quality document. Automatically detects audience (engineering, product, business) from content and adapts tone accordingly. Triggers on: "merge these docs", "synthesize these documents", "summarize these docs", "create unified doc", "analyze and combine these", "review and explain these docs", "combine all these into one", or any request to unify multiple document sources.
 ---
 
 # doc-merger
