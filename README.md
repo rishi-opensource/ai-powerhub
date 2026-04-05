@@ -31,6 +31,7 @@ Add the plugin directory to your Cursor plugins or install from the Cursor marke
 |---|---|
 | `/ai-powerhub:review-pr [PR#]` | Review a pull request. Pass a PR number, URL, or leave empty to review the current branch |
 | `/ai-powerhub:debug-issue [description]` | Investigate a bug. Paste an error message or describe the problem |
+| `/ai-powerhub:review-setup` | Comprehensive review of Claude Code/IDE setup (security, architecture, rules) |
 
 ## Skills
 
@@ -40,6 +41,9 @@ Skills are triggered automatically when you describe a task. You can also invoke
 |---|---|
 | `systematic-debugging` | "debug", "why is X failing", "help me investigate", stack traces |
 | `pr-review` | "review these changes", "review my diff", "code review" |
+| `instructor-mode` | "instructor mode", "teach me", "learning mode", "guide me through" |
+| `slack-guard` | Any Slack operation (confirmations for messages/reads/MCP tools) |
+| `doc-merger` | "merge these docs", "synthesize documents", "create unified doc" |
 
 ## Agents
 
